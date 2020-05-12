@@ -107,7 +107,7 @@ def display_instances(image, boxes, masks, class_ids, class_names,
     # If no axis is passed, create one and automatically call show()
     auto_show = False
     if not ax:
-        _, ax = plt.subplots(1, figsize=figsize)
+        fig , ax = plt.subplots(1, figsize=figsize)
         auto_show = True
 
     # Generate random colors
@@ -165,6 +165,7 @@ def display_instances(image, boxes, masks, class_ids, class_names,
     ax.imshow(masked_image.astype(np.uint8))
     if auto_show:
         plt.show()
+        plt.close (fig)
 
 
 def display_differences(image,
