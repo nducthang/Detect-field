@@ -40,8 +40,8 @@ class FieldDataset(utils.Dataset):
                 "field", 
                 image_id = int(onlyfiles[i][:-4]),
                 path=None, 
-                width=2048, 
-                height=2048)
+                width=1024, 
+                height=1024)
     
     def load_image(self, image_id):
         dataset_image = "./data/field/train"
