@@ -1,1 +1,3 @@
-Đang tiếp tục xây dựng...
+Full information about this response in my report :D 
+
+Thank you!
